@@ -1,6 +1,11 @@
-Use **`run_processor.ipynb`** to generate histograms.
+Core code:
+**`stxs_reweight_function.ipynb`** is used for running processor (producing coffea) and testing stxs function code.
+**`stxs_functions.py`** contains all the functions necessary for quadratic fitting and likelihood scans.
+**`vbfprocessor.py`** is the processor used in **`stxs_reweight_function.ipynb`**.
+**`fit_plots.ipynb`** is used for plotting likelihood scans and reweighted STXS bins. **`stxs_plotting.ipynb`** also contains stxs plots.
 
-**`stxs_reweight_fit.ipynb`** only works for two operators or less at a time for now; working on generalizing to n-dimensional fits
+
+Note: **`stxs_reweight_fit.ipynb`** only works for two operators or less at a time for now; working on generalizing to n-dimensional fits
 
 Typical workflow (assuming Higgs VBF root samples have already been simulated, including reweight points for desired operators):
 1. Creating coffea histograms:\
